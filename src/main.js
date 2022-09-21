@@ -1,16 +1,16 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-// import router from './router'
+import router from './router'
 import store from './store'
-import PrimeVue from 'primevue/config';
-import InputText from 'primevue/inputtext';
 import '@/styles/main.scss'
 
-const app = createApp(App);
+import PrimeVue from 'primevue/config'
+import Menubar from 'primevue/menubar'
 
-app
-.use(PrimeVue)
-.component('InputText', InputText)
-.use(store)
-// .use(router)
-.mount('#app')
+const app = createApp(App)
+
+app.use(PrimeVue)
+    .component('Menubar', Menubar)
+    .use(store)
+    .use(router)
+    .mount('#app')
