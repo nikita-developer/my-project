@@ -1,34 +1,15 @@
 <template>
     <header class="header">
-        <Menubar :model="items">
-            <template #start>
-                <img
-                    alt="logo"
-                    src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
-                    height="40"
-                    class="mr-2"
-                />
-            </template>
-        </Menubar>
+        <Logo class="header__logo"></Logo>
+        <Nav></Nav>
     </header>
 </template>
 
 <script>
+import Logo from '../Logo/Logo.vue'
+import Nav from '../Nav/Nav.vue'
 export default {
-    data() {
-        return {
-            items: [
-                {
-                    label: 'Главная',
-                    to: '/home',
-                },
-                {
-                    label: 'Контакты',
-                    to: '/contacts',
-                },
-            ],
-        }
-    },
+    components: { Logo, Nav },
 }
 </script>
 

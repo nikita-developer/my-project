@@ -6,3 +6,15 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}

@@ -1,7 +1,5 @@
 <template>
-    <footer class="footer">
-        <p>Copyright</p>
-    </footer>
+    <router-link to="/" class="logo"></router-link>
 </template>
 
 <script>
