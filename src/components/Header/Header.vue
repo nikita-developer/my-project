@@ -1,6 +1,5 @@
 <template>
     <header class="header">
-        <Logo class="header__logo"></Logo>
         <Nav></Nav>
     </header>
 </template>

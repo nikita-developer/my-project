@@ -1,8 +1,5 @@
-.nav {
-    &__link {
-        display: inline-block;
-        padding: 10px;
-        color: var(--surface-a);
-        text-decoration: none;
+::v-deep() {
+    .p-menubar {
+        justify-content: space-between;
     }
 }

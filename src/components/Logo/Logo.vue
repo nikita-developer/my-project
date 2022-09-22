@@ -1,5 +1,7 @@
 <template>
-    <router-link to="/" class="logo"></router-link>
+    <router-link to="/" class="logo">
+        <slot></slot>
+    </router-link>
 </template>
 
 <script>
